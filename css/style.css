@@ -531,5 +531,12 @@ h1.titulo-principal .destaque-titulo {
   font-weight: 800;
   line-height: 1.2;
   text-align: center;
-  text-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+    text-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+}
+
+.erro-campo {
+  display: block;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
