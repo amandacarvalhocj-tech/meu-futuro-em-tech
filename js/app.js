@@ -8,9 +8,13 @@ const formulario = document.querySelector('#form-perfil');
 const modal = document.querySelector('#modal-aviso');
 const mensagemModal = document.querySelector('#modal-mensagem');
 const botaoEnviar = formulario.querySelector('button[type="submit"]');
+const erroHobbies = document.querySelector('#erro-hobbies');
+const erroInteresses = document.querySelector('#erro-interesses');
 
 formulario.addEventListener('submit', async (evento) => {
   evento.preventDefault();
+  erroHobbies.textContent = '';
+  erroInteresses.textContent = '';
 
   const campos = formulario.elements;
 
@@ -32,15 +36,13 @@ formulario.addEventListener('submit', async (evento) => {
   }
 
   if (hobbies.length === 0) {
-    mensagemModal.textContent = 'Preencha pelo menos um hobby.';
-    modal.showModal();
+    erroHobbies.textContent = 'Preencha pelo menos um hobby.';
     campos.hobbies.focus();
     return;
   }
 
   if (interesses.length === 0) {
-    mensagemModal.textContent = 'Preencha pelo menos uma área de interesse.';
-    modal.showModal();
+    erroInteresses.textContent = 'Preencha pelo menos uma área de interesse.';
     campos.interesses.focus();
     return;
   }
