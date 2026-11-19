@@ -1,69 +1,58 @@
 # Career Dreamer — Mapeamento Vocacional
 
-## Descrição do projeto
+## Sobre o projeto
 
-O Career Dreamer é um sistema de mapeamento vocacional desenvolvido para ajudar estudantes a descobrir possíveis carreiras na área da tecnologia que combinam com seus interesses, hobbies e características pessoais.
+O Career Dreamer é um site criado para ajudar pessoas a descobrir quais profissões da área de tecnologia podem combinar com seus gostos e interesses.
 
-O usuário preenche um formulário com seu nome, hobbies e interesses. Essas informações são enviadas para uma API com inteligência artificial, que gera um perfil profissional e recomenda carreiras de acordo com o nível de compatibilidade.
+Para utilizar o site, a pessoa informa seu nome, hobbies e interesses em um formulário. Depois, essas informações são enviadas para uma API com inteligência artificial, que analisa as respostas e apresenta sugestões de carreiras que combinam com o perfil informado.
 
 ## Público-alvo
 
-Estudantes e pessoas que desejam conhecer melhor as possibilidades de carreira na área da tecnologia e identificar profissões que combinem com seus interesses.
+O projeto é voltado principalmente para estudantes e pessoas que têm interesse em conhecer melhor as profissões da área de tecnologia e descobrir quais delas combinam com seu perfil.
 
 ## Funcionalidades
 
-- Formulário para preenchimento do nome, hobbies e interesses.
-- Validação dos campos obrigatórios.
-- Envio das informações para uma API.
-- Exibição de mensagens de aviso e erro.
-- Apresentação do resumo do perfil profissional.
-- Recomendação de carreiras com porcentagem de compatibilidade.
-- Organização das profissões de acordo com a compatibilidade.
-- Exibição de resultados de exemplo para testes.
+- Preenchimento de um formulário com nome, hobbies e interesses.
+- Verificação dos campos obrigatórios.
+- Envio das informações para a API.
+- Mensagens de aviso e erro.
+- Exibição de um resumo do perfil do usuário.
+- Sugestões de profissões na área de tecnologia.
+- Exibição da porcentagem de compatibilidade com cada carreira.
+- Opção de visualizar um resultado de exemplo.
 
 ## Tecnologias utilizadas
 
-- **HTML5:** estruturação das páginas.
-- **CSS3:** estilização e organização visual.
-- **JavaScript:** validações, interações e comunicação com a API.
-- **API:** processamento das informações e geração das recomendações.
-- **JSON:** formato utilizado na comunicação de dados.
-- **Visual Studio Code:** editor utilizado no desenvolvimento.
-- **Live Server:** ferramenta para executar o projeto localmente.
+- **HTML5:** utilizado para montar a estrutura das páginas.
+- **CSS3:** utilizado para cuidar da aparência e organização do site.
+- **JavaScript:** responsável pelas funções do formulário e pela exibição dos resultados.
+- **API:** utilizada para analisar as informações e gerar as sugestões de carreira.
+- **JSON:** utilizado para organizar e enviar os dados.
+- **Visual Studio Code:** editor utilizado para desenvolver o projeto.
+- **Live Server:** utilizado para abrir e testar o site no navegador.
 
 ## Requisitos mínimos
 
 - Computador com navegador atualizado.
-- Conexão com a internet para utilizar a API.
-- Visual Studio Code, caso queira executar pelo editor.
-- Extensão Live Server para facilitar a execução local.
+- Internet para utilizar a API.
+- Visual Studio Code para editar os arquivos.
+- Extensão Live Server para executar o projeto pelo editor.
 
 ## Como executar o projeto
 
-1. Baixe ou clone este repositório.
-2. Abra a pasta do projeto no Visual Studio Code.
-3. Configure o endereço da API no arquivo `js/config.js`, conforme as orientações da API utilizada.
-4. Abra o arquivo `index.html` com o Live Server.
-5. Preencha o formulário e envie as informações para visualizar as recomendações.
+1. Baixe o projeto ou faça o clone do repositório.
+2. Abra a pasta no Visual Studio Code.
+3. Confira a configuração do endereço da API no arquivo `js/config.js`.
+4. Abra o arquivo `index.html` utilizando o Live Server.
+5. Preencha o formulário para visualizar as sugestões de carreira.
 
-Para visualizar um resultado de exemplo sem utilizar o backend, acesse `resultado.html?exemplo`.
+Também é possível abrir `resultado.html?exemplo` para visualizar um resultado de teste sem precisar utilizar a API.
 
 ## Estrutura do projeto
 
-```text
-meu-futuro-em-tech/
-├── index.html
-├── resultado.html
-├── css/
-│   └── style.css
-├── js/
-│   ├── config.js
-│   ├── app.js
-│   ├── resultado.js
-│   └── dados-exemplo.js
-├── ISSUES.md
-└── README.md
-```
+O projeto está organizado em arquivos HTML, CSS e JavaScript. Os arquivos `index.html` e `resultado.html` são responsáveis pelas páginas do site. A pasta `css` contém o arquivo `style.css`, que define a aparência do sistema. Já a pasta `js` reúne os códigos responsáveis pelo funcionamento do formulário, pela conexão com a API e pela exibição dos resultados.
+
+O projeto também conta com o arquivo `dados-exemplo.js`, utilizado para apresentar resultados de exemplo, o `ISSUES.md`, onde são registrados os problemas identificados, e este `README.md`, que reúne as principais informações sobre o sistema.
 
 ## Desenvolvedores
 
@@ -72,6 +61,6 @@ meu-futuro-em-tech/
 
 ## Relatório de Correção de Software
 
-O projeto também possui um Relatório de Correção de Software (RCS), que apresenta os problemas identificados, as correções realizadas e os testes executados durante o desenvolvimento.
+Junto com o projeto, foi desenvolvido um Relatório de Correção de Software (RCS), mostrando os problemas encontrados no site, o que foi feito para corrigi-los e os testes realizados para verificar as alterações.
 
-O documento está disponível neste repositório em formato PDF.
+O relatório está disponível neste repositório em PDF.
