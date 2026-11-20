@@ -266,6 +266,14 @@ main {
   color: var(--cor-tinta-suave);
 }
 
+/* Mensagens de erro dos campos */
+.erro-campo {
+  display: block;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 /* Modal */
 .modal {
   width: min(26rem, 100% - 2rem);
@@ -367,7 +375,6 @@ main {
   max-width: none;
   margin: 0 auto 1rem;
   padding: 0;
-
   color: #FF00FF;
   font-family: var(--fonte-titulo);
   font-size: 4.5rem;
@@ -379,12 +386,13 @@ main {
 
 .pagina-resultado h1 {
   font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  color: #000000;
 }
 
 .sintese {
   max-width: 60ch;
   font-size: 1.15rem;
-  color: var(--cor-tinta-suave);
+  color: #000000;
 }
 
 .lista-carreiras {
@@ -519,24 +527,4 @@ main {
 /* Cor de destaque da palavra Descubra */
 h1.titulo-principal .destaque-titulo {
   color: #01ccff !important;
-}
-.pagina-resultado > h2.titulo-resultado {
-  display: block;
-  width: 100%;
-  margin: 0 0 1rem;
-  padding: 0;
-  color: #FF00FF;
-  font-family: var(--fonte-titulo);
-  font-size: 4.5rem;
-  font-weight: 800;
-  line-height: 1.2;
-  text-align: center;
-    text-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
-}
-
-.erro-campo {
-  display: block;
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: 600;
 }
